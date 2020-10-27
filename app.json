@@ -1,0 +1,52 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/news/news",
+    "pages/news/show/show",
+    "pages/shopcar/shopcar",
+    "pages/my/my",
+    "pages/goods/list/list",
+    "pages/goods/detail/detail"
+  ],
+  "window":{
+    "backgroundTextStyle":"dark",
+    "navigationBarBackgroundColor": "#3771bb",
+    "navigationBarTitleText": "川信易购",
+    "navigationBarTextStyle":"white"
+  },
+  "tabBar":{
+    "color":"#999",
+    "selectedColor":"#f00",
+    "list":[
+      {
+        "pagePath":"pages/index/index",
+        "text":"首页",
+        "iconPath":"/img/tb-home-1.png",
+        "selectedIconPath":"/img/tb-home-2.png"
+      },
+      {
+        "pagePath":"pages/news/news",
+        "text":"资讯",
+        "iconPath":"/img/tb-news-1.png",
+        "selectedIconPath":"/img/tb-news-2.png"
+      },
+      {
+        "pagePath":"pages/shopcar/shopcar",
+        "text":"购物车",
+        "iconPath":"/img/tb-shopcar-1.png",
+        "selectedIconPath":"/img/tb-shopcar-2.png"
+      },
+      {
+        "pagePath":"pages/my/my",
+        "text":"我的",
+        "iconPath":"/img/tb-my-1.png",
+        "selectedIconPath":"/img/tb-my-2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
+}

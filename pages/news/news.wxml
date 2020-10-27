@@ -1,0 +1,24 @@
+<navigator wx:for="{{newsList}}" wx:key="index" url="/pages/news/show/show?nid={{item.nid}}">
+  <view class="news-box">
+    <view class="pic-box">
+      <image class="pic"  src="{{item.pic}}"></image>
+    </view>
+    <view class="text-box">
+      <view class="title">{{item.title}}</view>
+      <view class="info">日期：{{item.createtime}} 阅读量：{{item.hits}}</view>
+    </view> 
+  </view>
+</navigator>
+
+<!-- 如果数据全部加载，提醒用户 -->
+<view wx:if="{{isEnd}}" class="msg">
+  我也是有底线的
+</view>
+
+<!-- 添加文章的图标 -->
+<movable-area>
+  <movable-view direction="all" x="{{x}}" y="{{y}}"  id="movbox">
+    <image src="/img/plus.svg" style="width:100%;" mode="widthFix"></image>
+  </movable-view>
+</movable-area>
+

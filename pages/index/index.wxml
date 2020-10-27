@@ -1,0 +1,50 @@
+<view class="container">
+  <!--轮播-->
+  <swiper class="my-swiper" 
+  autoplay 
+  circular 
+  duration="400" 
+  interval="4000" 
+  indicator-dots 
+  indicator-color="#f00" 
+  indicator-active-color="#00f">
+    <block wx:for="{{swList}}" wx:key='*this'>
+      <swiper-item>
+        <image src="{{item}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="bar"></view>
+  <!--分类导航-->
+  <view class="page__desc"></view>
+    <view class="my-grid bg-white">
+      <mp-row>
+        <block wx:for="{{cList}}" wx:key="index">
+          <navigator url="/pages/goods/list/list?cid={{item.bid}}">
+            <mp-col span="{{6}}">
+              <view class="col">
+                <image src="{{item.bpic}}"></image>
+                <view class="col">{{item.bname}}</view>
+              </view>
+            </mp-col>
+          </navigator>
+        </block>
+    </mp-row>
+  </view>
+
+  <view class="bar"></view>
+  <!--调用自定义组件，完成最新商品展示-->
+  <view class="goodsbox bg-white">
+    <block wx:for="{{goodList}}" wx:key="index">
+      <goods-item 
+        gid="{{item.gid}}"
+        pic='{{item.pic}}'
+        gname='{{item.gname}}'
+        gintro='{{item.gintro}}'
+        gprice='{{item.gprice}}'
+      >
+      </goods-item>
+    </block>
+  </view>
+
+</view>

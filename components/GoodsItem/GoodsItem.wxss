@@ -1,0 +1,24 @@
+.goods-box{
+  width:100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+
+.goods-box image{
+  width: 100%;
+}
+
+.goods-name{
+  font: bold 28rpx/40rpx "微软雅黑";
+  color: #666;
+}
+
+.goods-intro{
+  font-size: 20rpx;
+  color: #aaa;
+}
+
+.goods-gprice{
+  font: 30rpx/50rpx "微软雅黑";
+  color: #f00;
+}

@@ -1,0 +1,27 @@
+<view class="shopcar-item bg-white" wx:for="{{carList}}" wx:key="index">
+  <view class="ck-box">
+    <radio checked="{{item.ck}}" catchtap="setCK" id="{{index}}"></radio>
+  </view>
+  <view class="pic-box">
+    <image class="pic" src="{{item.gpic}}" mode="widthFix"></image>
+  </view>
+  <view class="info-box">
+    <view class="name">{{item.gname}}</view>
+    <view class="intro">{{item.gintro}}</view>
+    <view class="price-num">
+      <view class="price">￥{{item.gprice}}</view>
+      <view class="num-box">
+        <button size="mini" bindtap="setNum" id="{{index}}" data-fh="-">-</button>
+        <text class="num">{{item.num}}</text>
+        <button size="mini" catchtap="setNum" id="{{index}}" data-fh="+">+</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 总计费 -->
+<view class="total-box bg-white">
+  <radio catchtap="setCkAll" checked="{{ckAll}}">全选</radio>
+  <text> 总计：{{totalCount}} ￥ <text class="tprice">{{totalPrice}}</text> </text>
+  <view class="btn">去结算</view>
+</view>

@@ -1,0 +1,15 @@
+/**app.wxss**/
+.container {
+  height: 100%;
+  box-sizing: border-box;
+} 
+
+page{
+  background: #e1e1e1;
+}
+.bg-white{
+  background: #fff;
+}
+.bar{
+  height: 20rpx;
+}

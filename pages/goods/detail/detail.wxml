@@ -1,0 +1,26 @@
+<swiper class="bg-white" autoplay>
+     <swiper-item wx:for="{{goods.photo}}">
+         <image src="{{item}}" mode="aspectFit"></image>
+     </swiper-item>   
+</swiper>
+
+<view class="bar"></view>
+
+<view class="info-box bg-white">
+  <view class="name">{{goods.gname}}</view>
+  <view class="level">成色：{{goods.level}}成新</view>
+  <view class="time">时间{{goods.createtime}}</view>
+  <view>交付方式:{{goods.howbuy}}</view>
+  <view class="owner">
+    <text>发布者:{{goods.student.sname}}</text>
+    <text>信誉等级:{{goods.state}}</text>
+  </view>
+  <view class="level"></view>
+  <view class="intro">{{goods.intro}}</view>
+</view>
+<view class="bar"></view>
+
+<view class="buy-box bg-white">
+  <text>￥{{goods.price}}</text>
+  <view class="btnCart">选购商品</view>
+</view>

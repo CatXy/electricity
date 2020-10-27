@@ -1,0 +1,9 @@
+<navigator class="goods-box"
+url="/pages/goods/detail/detail?gid={{gid}}"
+>
+  <image src="{{pic}}" mode="widthFix"></image>
+  <view class="goods-name">{{gname}}</view>
+  <view class="goods-gintro">{{gintro}}</view>
+  <view class="goods-gprice">{{gprice}}</view>
+</navigator>
+

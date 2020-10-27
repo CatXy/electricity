@@ -1,0 +1,35 @@
+.my-swiper{
+  width:100%;
+  height:calc(290/655 * 100vw);
+}
+.my-swiper image{
+  width:100%;
+  height:100%;
+}
+.my-grid{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+}
+.my-grid .col{
+  padding: 30rpx 0;
+}
+.my-grid mp-col{
+  text-align: center;
+  font-size: 28rpx;
+}
+.my-grid image{
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* 商品列表样式 */
+.goodsbox{
+  display: flex;
+  flex-wrap: wrap;
+}
+.goodsbox goods-item{
+  width: 50%;
+}
+
+

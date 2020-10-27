@@ -1,0 +1,68 @@
+.shopcar-item{
+  height: 120px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.ck-box{
+  width: 50px;
+}
+.pic-box{
+  width: 90px;
+  height: 90px;
+}
+.pic{
+  width: 100%;
+}
+.info-box{
+  flex: 1;
+  margin-left: 10px;
+}
+.price-num{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.num-box{
+  display: flex;
+  align-items: center;
+}
+.num{
+  width: 40px;
+  text-align: center;
+}
+.name{
+  color: #333;
+  font: 16px/20px "微软雅黑" ;
+}
+.intro{
+  color: #aaa;
+}
+.price{
+  color: #f00;
+  font: 16px/20px "微软雅黑" ;
+}
+
+/* 总计模块 */
+.total-box{
+  display: flex;
+  align-items: center;
+  line-height: 50px;
+  justify-content: space-between;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.btn{
+  background: #f00;
+  padding: 0 20px;
+  box-sizing: border-box;
+  color: #fff;
+}
+.tprice{
+  color: #f00;
+}

@@ -1,0 +1,20 @@
+.show-box{
+  padding: 25rpx;
+  box-sizing: border-box;
+}
+.title{
+  font:20px/30px "微软雅黑";
+  color: #333;
+}
+.info{
+  font:14px/30px "微软雅黑";
+  color: #aaa;
+}
+.pic{
+  width: 100%;
+}
+.content{
+  font:16px/40px "微软雅黑";
+  color: #666;
+  text-indent: 2em;
+}

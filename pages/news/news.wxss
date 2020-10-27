@@ -1,0 +1,58 @@
+page{
+  background: #e1e1e1;
+}
+.news-box{
+  background: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.pic-box{
+  width:50px;
+  height:50px;
+  margin-right: 15px;
+}
+.pic{
+  width: 50px;
+  height: 50px;
+}
+.text-box{
+  flex:1;
+}
+.title{
+  font:20px/30px "微软雅黑";
+  text-overflow: ellipsis;  /*文本溢出时,显示省略号 IE, WebKit (Safari, Chrome), Firefox 7, Opera 11*/
+  overflow: hidden; /*内容超出,隐藏元素 */
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #333;
+}
+.info{
+  font:14px/30px "微软雅黑";
+  color: #aaa;
+}
+
+/* 可移动区域的样式 */
+movable-area{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  /* 添加鼠标穿透样式 */
+  pointer-events: none;
+}
+movable-view{
+  width: 100rpx;
+  height: 100rpx;
+  /* 设置小球区域不准穿透 */
+  pointer-events: auto;
+}
+.msg{
+  padding: 30rpx 0;
+  text-align: center;
+  font-size: 28rpx;
+}
+

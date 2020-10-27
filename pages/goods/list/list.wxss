@@ -1,0 +1,27 @@
+page{
+  height: 100%;
+}
+.box{
+  display: flex;
+  height: 100%;
+}
+.left-view{
+  flex:1;
+  background: rgba(0, 0, 0, .05);
+}
+.right-view{
+  flex:3;
+}
+.cname{
+  line-height: 80rpx;
+  text-indent: 30rpx;
+  font-size: 28rpx;
+}
+/* 被点后的效果 */
+.actived{
+  color: #3771bb;
+  background: #fff;
+  border-left: #3771bb 3px solid;
+}
+
+

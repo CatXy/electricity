@@ -1,0 +1,22 @@
+<view class="box bg-white">
+  <scroll-view class="left-view" scroll-y>
+    <view class="cname {{index==myclick?'actived':''}}"
+      catchtap="setActived" 
+      id='{{index}}'
+      wx:for="{{smList}}" wx:key="index">{{item.smname}}</view>
+  </scroll-view>
+  <scroll-view class="right-view" scroll-y>
+    <view style="display:flex;flex-wrap:wrap;">
+      <goods-item 
+        style="width:50%;"
+        wx:for="[1,1,1,1,1,1,1,1]"
+        gid='{{item}}'
+        pic='/img/sj.png'
+        gname='华为Mate40'
+        gintro='低价转让'
+        gprice='2999'
+      >
+      </goods-item>
+    </view>
+  </scroll-view>
+</view>

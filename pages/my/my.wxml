@@ -1,0 +1,23 @@
+<view class="myface">
+  <block  wx:if="{{!hasUserInfo && canIUse}}">
+    <button class="btnLogin" open-type="getUserInfo" bindgetuserinfo="getUserInfo">微信授权</button>
+  </block>
+  <block wx:else>
+    <image class="face" src="{{userInfo.avatarUrl}}"></image>
+    <text class="name">{{userInfo.nickName}}</text>
+  </block>
+</view>
+
+<!-- 功能列表 -->
+<view>
+  <mp-cells>
+    <mp-cell link hover icon="/img/my-gm.svg" value="我够买的物品"></mp-cell>
+    <mp-cell link hover icon="/img/my-sm.svg" value="我售卖的物品"></mp-cell>
+    <mp-cell link hover icon="/img/my-fb.svg" value="我发布的"></mp-cell>
+    <mp-cell link hover icon="/img/my-kf.svg" value="呼叫客服" catchtap="callTel"></mp-cell>
+    <mp-cell link hover icon="/img/my-kf2.svg">
+      与客服对话
+      <button class="btnKF" open-type="contact"></button>
+    </mp-cell>
+  </mp-cells>
+</view>

@@ -1,0 +1,8 @@
+<view class="show-box bg-white">
+  <view class="title">{{notice.title}}</view>
+  <view class="info">{{notice.createtime}} 阅读量：{{notice.hits}}</view>
+  <image class="pic" mode="widthFix" src="{{notice.pic}}"></image>
+  <view class="content">{{notice.content}} 
+  </view>
+
+</view>
